@@ -1,5 +1,4 @@
 name: Cloud check in action
-#run
 on:
   push:
     branches:
@@ -7,7 +6,7 @@ on:
   watch:
     types: started
   schedule:
-    - cron: 35 3 * * *
+    - cron: 01 0 * * *
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
